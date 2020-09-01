@@ -1,13 +1,180 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: rgb(247, 228, 124);
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+}
+
+#header {
+  background-color: rgb(183, 248, 117);
+  padding: 5px 0px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+#header a {
+  display: block;
+  padding: 15px;
+  color: rgb(43, 1, 51);
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+#header ul {
+  list-style-type: none;
+}
+
+#header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header nav a:hover,
+#header nav a:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px 5px;
+}
+
+#header nav a.active {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px 5px;
+}
+
+#header .catigories {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#header .logo {
+  font-size: 2.2em;
+  padding: 0px;
+}
+
+img {
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+
+img:hover {
+  box-shadow: 2px 2px 2px 2px;
+  transform: scale(1.05);
+  /* color: rgb(248, 216, 35); */
+}
+
+#books-section {
+  margin: 50px 0px;
+}
+
+.section-title {
+  padding: 20px 0px;
+}
+
+.books-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+#books-section.book {
+  box-shadow: rgba(0, 0, 0, 0.1);
+  background-color: rgb(248, 216, 35);
+}
+
+.book-img {
+  width: 100%;
+  height: 200px;
+}
+
+#books-section .book-info {
+  padding: 10px;
+}
+
+#books-section .book-title {
+  padding-bottom: 10px;
+}
+#books-section .book-author {
+  padding-bottom: 5px;
+}
+
+.btn {
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px 0px;
+  opacity: 0.9;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 1;
+}
+
+.btn-highlight {
+  background-color: rgb(194, 72, 72);
+  color: white;
+}
+
+#book-detail .book-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+#book-detail .book-title {
+  padding-bottom: 15px;
+}
+
+#book-detail .book-author {
+  padding-bottom: 10px;
+}
+
+#book-detail .book-review-container {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: flex-end;
+}
+
+#book-detail .book-review-container .book-stars {
+  color: brown;
+}
+
+#book-detail .book-review-container .book-review {
+  margin-left: 5px;
+}
+
+#Page-not-found {
+}
+
+#footer {
+  background-color: rgb(159, 110, 122);
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0px;
+  margin-top: auto;
+}
+
+.has-fixed-footer {
+  min-height: 89vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.weak {
+  text-align: center;
+  font-weight: bold;
 }
